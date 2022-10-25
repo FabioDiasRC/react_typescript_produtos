@@ -1,0 +1,128 @@
+$main-color: #1B1EEB !important;
+$second-color: #0065FF !important;
+$third-color: #0089FF !important;
+$fourth-color: #00A3FF !important;
+$white: #fff !important;
+$grey: rgba(99, 93, 93, 0.973) !important;
+
+$theme-color: (
+  'teste': #ff0015
+);
+
+.navbar {
+  background-color: $main-color;
+  color: $main-color;
+
+  &__secondpart {
+    margin-left: 76%;
+  }
+
+  &__logo {
+    width: 45px;
+  }
+
+  &__text {
+    color: $white;
+  }
+}
+
+.carousel {
+  margin-top: 58px;
+
+  &__img {
+    height: 500px;
+  }
+}
+
+.cards {
+  margin: 50px auto;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    margin: 20px 0px;
+    color: $second-color;
+  }
+
+  &__col {
+    margin: 30px 2px;
+    text-align: center;
+    text-align-last: center;
+  }
+
+  &__card {
+    align-self: center;
+    margin: auto;
+    border: 2px solid $second-color;
+    border-radius: 15px;
+
+    &__button {
+      background-color: $second-color;
+      border-radius: 10px;
+      color: $white;
+    }
+
+    &__img{
+      border-radius: 15px 15px 0px 0px;
+    }
+
+    &__oldPrice {
+      font-size: 15px;
+      color: red;
+    }
+    
+    &__price{
+      font-size: 30px;
+      color: green;
+      text-align: center;
+    }
+
+    &__description{
+      text-align: justify;
+    }
+
+    &__title{
+      text-align: center;
+    }
+
+    &__more{
+      @extend .cards__card__button;
+      font-size: 25px;
+      display: flex;
+      margin: auto;
+      padding: 15px;
+    }
+  }
+
+  &__products{
+    margin-bottom: 20px!important;
+  }
+}
+
+.photos {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  text-align: center;
+
+  &__row{
+    margin-bottom: 50px;
+  }
+
+  &__img{
+    height: 500px;
+    width: 100%;
+  }
+  
+  &__text{
+    align-content: center;
+    height: 500px;
+    color: $second-color;
+  }
+}
+
+
+.teste {
+  background-color: $second-color;
+  color: $white;
+}
