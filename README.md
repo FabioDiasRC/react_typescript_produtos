@@ -21,5 +21,5 @@
 
 ```bash
 #Para clonar o projeto:
-$git clone 
-Abrir 'index.html' em um navegador
+$git clone https://github.com/FabioDiasRC/react_typescript_produtos
+No terminal digitar o comando "npm run dev"
