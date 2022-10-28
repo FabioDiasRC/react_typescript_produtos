@@ -62,30 +62,31 @@ $theme-color: (
       color: $white;
     }
 
-    &__img{
+    &__img {
       border-radius: 15px 15px 0px 0px;
     }
 
     &__oldPrice {
       font-size: 15px;
       color: red;
+      text-align: center;
     }
-    
-    &__price{
+
+    &__price {
       font-size: 30px;
       color: green;
       text-align: center;
     }
 
-    &__description{
+    &__description {
       text-align: justify;
     }
 
-    &__title{
+    &__title {
       text-align: center;
     }
 
-    &__more{
+    &__more {
       @extend .cards__card__button;
       font-size: 25px;
       display: flex;
@@ -94,33 +95,135 @@ $theme-color: (
     }
   }
 
-  &__products{
-    margin-bottom: 20px!important;
+  &__products {
+    margin-bottom: 20px !important;
   }
 }
 
 .photos {
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 60px;
   width: 100%;
   text-align: center;
 
-  &__row{
-    margin-bottom: 50px;
+  &__row {
+    margin: 50px 20px;
   }
 
-  &__img{
+  &__img {
     height: 500px;
     width: 100%;
   }
-  
-  &__text{
+
+  &__text {
     align-content: center;
     height: 500px;
     color: $second-color;
   }
 }
 
+.banner{
+  position: relative;
+  background:url(../img/productdevelopment.png) center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 60px;
+
+  &__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  
+  &__title{
+    border: 6px solid $white;
+    width: 200px;
+    margin: auto;
+    color: $white;
+  }
+
+  &__text{
+    color: $white;
+  }
+
+  &__span{
+    color: $main-color;
+  }
+
+  &__btn{
+    background: $white;
+    width: 120px;
+    height: 40px;
+    border: $white;
+    border-radius: 15px;
+  }
+  
+  &__btn:hover{
+    opacity: 0.5;
+    color: $main-color;
+  }
+
+}
+
+.location{
+  &__img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  &__title{
+    color: $main-color;
+    text-align: center;
+    margin: 40px 0px;
+  }
+}
+
+.form {
+  margin-top:50px;
+  margin-bottom:50px;
+  color: $second-color;
+
+  &__input{
+    border-color: $second-color;
+  }
+  &__input::placeholder{
+    color: $second-color;
+    opacity: 0.5;
+  }
+
+  &__btn{
+    background-color: $second-color;
+    display: flex;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.footer{
+  background-color: $main-color;
+  color: $white;
+  padding: 50px 0px;
+
+  &__title{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__partial{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__end{
+    text-align: center;
+    padding-top: 15px;
+    border-top: 2px solid $white ;
+    opacity: .8;
+  }
+}
 
 .teste {
   background-color: $second-color;
