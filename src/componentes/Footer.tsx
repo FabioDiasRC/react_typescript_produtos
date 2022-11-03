@@ -5,6 +5,7 @@ import { GrFacebook } from 'react-icons/gr';
 import { BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import '../scss/stylesheet.scss'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -22,15 +23,15 @@ function Footer() {
           </div>
           <div className="col-md-4 footer__partial">
             <h2>Produtos</h2>
-            <h5>Principais produtos</h5>
-            <h5>Carrinho</h5>
-            <h5>Favoritos</h5>
+            <Link to='/produtos' className='footer__links'><h5>Produtos</h5></Link>
+            <Link to='/carrinho' className='footer__links'><h5>Carrinho</h5></Link>
+            <Link to='/favoritos' className='footer__links'><h5>Favoritos</h5></Link>
           </div>
           <div className="col-md-4 footer__partial">
             <h2>Contatos</h2>
-            <h5><BsInstagram /> Instagram</h5>
-            <h5><GrFacebook /> Facebook</h5>
-            <h5><BsWhatsapp /> Whatsapp</h5>
+            <a href="https://github.com/FabioDiasRC" target="_blank" className='footer__links'><h5><BsInstagram /> Instagram</h5></a>
+            <a href="https://github.com/FabioDiasRC" target="_blank" className='footer__links'><h5><GrFacebook /> Facebook</h5></a>
+            <a href="https://github.com/FabioDiasRC" target="_blank" className='footer__links'><h5><BsWhatsapp /> Whatsapp</h5></a>
           </div>
 
           <div className="col-md-12 footer__end">
