@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import '../../scss/stylesheet.scss';
+import '../../../scss/stylesheet.scss';
 
 type Products = {
   image: string,
@@ -10,7 +10,7 @@ type Products = {
   price: number
 };
 
-function CardProduct(props: Products) {
+function CardProductHome(props: Products) {
   return (
     <>
       <div className="col-md-3 ">
@@ -27,4 +27,4 @@ function CardProduct(props: Products) {
     </>
   )
 }
-export default CardProduct;
+export default CardProductHome;

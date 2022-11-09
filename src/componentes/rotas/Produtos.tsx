@@ -1,18 +1,15 @@
+import Data from '../data_from_api/Data'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/stylesheet.scss';
+import Cards from '../Cards';
 
 function Produtos() {
   return (
     <>
-      <h1>Teste produtos</h1>X
-      <h1>Teste produtos</h1>X
-      <h1>Teste produtos</h1>X
-      <h1>Teste produtos</h1>X
-      <h1>Teste produtos</h1>X
-      <h1>Teste produtos</h1>X
-      <h1>Teste produtos</h1>X
-      <h1>Teste produtos</h1>
-    </>    
+      <Cards />
+      <Data />
+      <p style={{marginBottom: "20px"}}></p>
+    </>
   )
 }
 

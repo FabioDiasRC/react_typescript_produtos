@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import CardProduct from './CardProduct';
+import CardProduct from './CardProductHome';
 
 type resultProps = {
   id: number,
@@ -33,7 +33,14 @@ export default function GetData() {
         <div className="col-12">
           <div className="row">
             {products.map((product: resultProps) =>
-                <CardProduct key={product?.id} name={product.name} image={product.image} oldPrice={product.oldPrice} price={product.price} description={product.description} />
+                <CardProduct
+                key={product.id}
+                name={product.name}
+                image={product.image}
+                oldPrice={product.oldPrice}
+                price={product.price}
+                description={product.description} 
+                />
               )
             }
           </div>

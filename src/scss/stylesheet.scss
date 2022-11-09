@@ -9,6 +9,11 @@ $theme-color: (
   'teste': #ff0015
 );
 
+//padding top on body because the navbar has 70px on fixed top(number from documentation is 70px)
+body{
+  padding-top: 70px;
+}
+
 .navbar {
   background-color: $main-color;
   color: $main-color;
@@ -30,8 +35,6 @@ $theme-color: (
 }
 
 .carousel {
-  margin-top: 58px;
-
   &__img {
     height: 500px;
   }
